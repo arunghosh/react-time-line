@@ -4,8 +4,6 @@
 
 **React component for diplaying timeline**
 
-![alt tag](https://github.com/arunghosh/react-pin-input/raw/master/docs/pin.png)
-
 
 **Installation**
 ```
