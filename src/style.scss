@@ -17,15 +17,13 @@
     > .time-label {
       > span {
         font-weight: 600;
-        padding: 5px;
+        padding: 5px 10px;
         display: inline-block;
         background-color: #e74c3c;
         color: #fff;
-        border-radius: 4px;
+        border-radius: 2px;
+        font-size: 15px;
       }
-    }
-    .bg-blue {
-      background: #3498db !important;
     }
     > li {
       position: relative;

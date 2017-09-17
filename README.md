@@ -1,7 +1,10 @@
 # react-time-line
 
-**React component for diplaying timeline**
+[![Build Status](https://travis-ci.org/arunghosh/react-timline.svg?branch=master)](https://travis-ci.org/arunghosh/react-timline)
 
+React component for diplaying timeline. This is based on the timeline found in [AdminLte](https://github.com/almasaeed2010/AdminLTE).
+
+![alt tag](https://github.com/arunghosh/react-time-line/raw/master/docs/timeline.png)
 
 **Installation**
 ```
@@ -12,10 +15,14 @@ npm install react-time-line
 **Usage**
 
 ```javascript
-  <Timeline items={[ { ts: new Date().toISOString(), text: 'Something happened' } ]} />,
-```
+const events = [
+  {ts: new Date().toISOString(), text: 'Logged in'},
+  {ts: new Date().toISOString(), text: 'Clicked Home Page'},
+  {ts: new Date().toISOString(), text: 'Edited Profile'},
+];
 
-**Configuration**
+<Timeline items={events} />
+```
 
 **Style**
 
