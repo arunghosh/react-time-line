@@ -1,6 +1,6 @@
 {
   "name": "react-timeline",
-  "version": "0.4.1",
+  "version": "0.0.1",
   "description": "React component for displaying timeline",
   "main": "dist/bundle.js",
   "scripts": {
@@ -21,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.23.1",
+    "babel-eslint": "^8.0.0",
     "babel-jest": "^19.0.0",
     "babel-loader": "^6.4.0",
     "babel-preset-es2015": "^6.24.0",
@@ -29,6 +30,7 @@
     "enzyme": "^2.7.1",
     "eslint": "^3.17.1",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-prettier": "^2.5.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",

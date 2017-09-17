@@ -1,23 +1,37 @@
 import moment from 'moment';
 import React from 'react';
 import PropTypes from 'prop-types';
+import TimlineItem from './TimlineItem';
 
-function Timeline({items}) {
+
+/**
+ * Converts array of events in to object having date as the key and list of 
+ * event for that date as the value
+ *
+ * @param {Array} items Array of events in the form of ts and text
+ * @returns {Object} return object with key as date and values array in events for that date
+ */
+function getFormattedData(items) {
   const activities = {};
   items.forEach(({ts, text}, index) => {
-      const date = moment(ts);
-      const dateStr = date.format('DD MMM YYYY');
-      const list = activities[dateStr] || [];
-      list.push({
-        time: date.format('hh:mm'),
-        text,
-        key: index,
-      });
-      activities[dateStr] = list;
+    const date = moment(ts);
+    const dateStr = date.format('DD MMM YYYY');
+    const list = activities[dateStr] || [];
+    list.push({
+      time: date.format('hh:mm'),
+      text,
+      key: index,
     });
+    activities[dateStr] = list;
+  });
+  return activities;
+}
+
+function Timeline({items}) {
+  const activities = getFormattedData(items);
   const dates = Object.keys(activities);
   return (
-    <div className="p-10 timeline-ctnr">
+    <div className="timeline-ctnr">
       {dates.map(d =>
         <ul className="timeline" key={d}>
           <li key={d} className="time-label">
@@ -26,17 +40,7 @@ function Timeline({items}) {
             </span>
           </li>
           {activities[d].map(({time, text, key}) =>
-            <li key={key}>
-              <i className="fa" />
-              <div className="timeline-item">
-                <span className="time">
-                  <i className="fa fa-clock-o" /> {time}
-                </span>
-                <div className="timeline-header">
-                  {text}
-                </div>
-              </div>
-            </li>,
+            <TimlineItem time={time} text={text} key={key} />,
           )}
         </ul>,
       )}
@@ -44,12 +48,11 @@ function Timeline({items}) {
   );
 }
 
-Timeline.defaultProps = {};
-
 Timeline.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    ts: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 export default Timeline;
-
-
