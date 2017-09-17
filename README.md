@@ -1,7 +1,5 @@
 # react-time-line
 
-[![Build Status](https://travis-ci.org/arunghosh/react-pin-input.svg?branch=master)](https://travis-ci.org/arunghosh/react-pin-input)
-
 **React component for diplaying timeline**
 
 
