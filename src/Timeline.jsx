@@ -34,7 +34,7 @@ function Timeline({items}) {
     <div className="time-line-ctnr">
       {dates.map(d =>
         <ul className="time-line" key={d}>
-          <li key={d} className="time-label">
+          <li className="time-label">
             <span>
               {d}
             </span>

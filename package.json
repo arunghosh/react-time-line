@@ -1,6 +1,6 @@
 {
   "name": "react-time-line",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "React component for displaying timeline",
   "main": "dist/bundle.js",
   "scripts": {

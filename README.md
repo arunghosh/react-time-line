@@ -16,9 +16,12 @@ npm install react-time-line
 
 ```javascript
 const events = [
-  {ts: new Date().toISOString(), text: 'Logged in'},
-  {ts: new Date().toISOString(), text: 'Clicked Home Page'},
-  {ts: new Date().toISOString(), text: 'Edited Profile'},
+  {ts: "2017-09-17T12:22:46.587Z", text: 'Logged in'},
+  {ts: "2017-09-17T12:21:46.587Z", text: 'Clicked Home Page'},
+  {ts: "2017-09-17T12:20:46.587Z", text: 'Edited Profile'},
+  {ts: "2017-09-16T12:22:46.587Z", text: 'Registred'},
+  {ts: "2017-09-16T12:21:46.587Z", text: 'Clicked Cart'},
+  {ts: "2017-09-16T12:20:46.587Z", text: 'Clicked Checkout'},
 ];
 
 <Timeline items={events} />
@@ -28,7 +31,7 @@ The events should be ordered in a way you need.
 
 **Style**
 
-Currently there is no proper way to set the style. As a hack you can override the default style.
+Currently there is no proper way to set the style. As a hack you can override the default style. Check for the default style in `src/style.scss`.
 
 
 ### For developers

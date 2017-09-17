@@ -8,7 +8,7 @@
       content: '';
       position: absolute;
       top: 0;
-      bottom: 0;
+      bottom: -10px;
       width: 2px;
       background: #3498db;
       left: 32px;
@@ -22,7 +22,7 @@
         background-color: #e74c3c;
         color: #fff;
         border-radius: 2px;
-        font-size: 15px;
+        font-size: 14px;
       }
     }
     > li {
