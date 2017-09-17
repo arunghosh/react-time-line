@@ -1,5 +1,5 @@
-.timeline-ctnr {
-  .timeline {
+.time-line-ctnr {
+  .time-line {
     position: relative;
     margin: 0 0 0px 0;
     padding: 0;
@@ -29,7 +29,7 @@
       position: relative;
       margin-bottom: 10px;
       margin-right: 0;
-      > .timeline-item {
+      > .time-line-item {
         -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         border-radius: 3px;
@@ -38,7 +38,7 @@
         margin-right: 15px;
         position: relative;
         margin-left: 50px;
-        > .timeline-header,
+        > .time-line-header,
         .time {
           font-size: 14px;
           padding: 6px 10px;
@@ -48,7 +48,7 @@
           color: #999;
           float: right;
         }
-        .timeline-header {
+        .time-line-header {
           margin: 0;
           color: #555;
           border-bottom: 1px solid #f4f4f4;

@@ -17810,11 +17810,11 @@ function Timeline(_ref2) {
   var dates = Object.keys(activities);
   return _react2.default.createElement(
     'div',
-    { className: 'timeline-ctnr' },
+    { className: 'time-line-ctnr' },
     dates.map(function (d) {
       return _react2.default.createElement(
         'ul',
-        { className: 'timeline', key: d },
+        { className: 'time-line', key: d },
         _react2.default.createElement(
           'li',
           { key: d, className: 'time-label' },
@@ -17905,7 +17905,7 @@ function TimlineItem(_ref) {
     _react2.default.createElement('i', { className: 'fa' }),
     _react2.default.createElement(
       'div',
-      { className: 'timeline-item' },
+      { className: 'time-line-item' },
       _react2.default.createElement(
         'span',
         { className: 'time' },
@@ -17915,7 +17915,7 @@ function TimlineItem(_ref) {
       ),
       _react2.default.createElement(
         'div',
-        { className: 'timeline-header' },
+        { className: 'time-line-header' },
         text
       )
     )
@@ -19858,7 +19858,7 @@ exports = module.exports = __webpack_require__(146)(undefined);
 
 
 // module
-exports.push([module.i, ".timeline-ctnr .timeline {\n  position: relative;\n  margin: 0 0 0px 0;\n  padding: 0;\n  list-style: none; }\n  .timeline-ctnr .timeline:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    width: 2px;\n    background: #3498db;\n    left: 32px;\n    border-radius: 2px; }\n  .timeline-ctnr .timeline > .time-label > span {\n    font-weight: 600;\n    padding: 5px 10px;\n    display: inline-block;\n    background-color: #e74c3c;\n    color: #fff;\n    border-radius: 2px;\n    font-size: 15px; }\n  .timeline-ctnr .timeline > li {\n    position: relative;\n    margin-bottom: 10px;\n    margin-right: 0; }\n    .timeline-ctnr .timeline > li > .timeline-item {\n      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n      border-radius: 3px;\n      background: #fff;\n      color: #444;\n      margin-right: 15px;\n      position: relative;\n      margin-left: 50px; }\n      .timeline-ctnr .timeline > li > .timeline-item > .timeline-header,\n      .timeline-ctnr .timeline > li > .timeline-item .time {\n        font-size: 14px;\n        padding: 6px 10px; }\n      .timeline-ctnr .timeline > li > .timeline-item .time {\n        font-size: 12px;\n        color: #999;\n        float: right; }\n      .timeline-ctnr .timeline > li > .timeline-item .timeline-header {\n        margin: 0;\n        color: #555;\n        border-bottom: 1px solid #f4f4f4;\n        line-height: 1.1; }\n    .timeline-ctnr .timeline > li > .fa {\n      position: absolute;\n      border-radius: 50%;\n      width: 10px;\n      height: 10px;\n      color: #666;\n      background: #ecf0f1;\n      left: 28px;\n      top: 9px;\n      border: 2px solid #3498db;\n      display: inline-block;\n      box-sizing: border-box; }\n", ""]);
+exports.push([module.i, ".time-line-ctnr .time-line {\n  position: relative;\n  margin: 0 0 0px 0;\n  padding: 0;\n  list-style: none; }\n  .time-line-ctnr .time-line:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    width: 2px;\n    background: #3498db;\n    left: 32px;\n    border-radius: 2px; }\n  .time-line-ctnr .time-line > .time-label > span {\n    font-weight: 600;\n    padding: 5px 10px;\n    display: inline-block;\n    background-color: #e74c3c;\n    color: #fff;\n    border-radius: 2px;\n    font-size: 15px; }\n  .time-line-ctnr .time-line > li {\n    position: relative;\n    margin-bottom: 10px;\n    margin-right: 0; }\n    .time-line-ctnr .time-line > li > .time-line-item {\n      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n      border-radius: 3px;\n      background: #fff;\n      color: #444;\n      margin-right: 15px;\n      position: relative;\n      margin-left: 50px; }\n      .time-line-ctnr .time-line > li > .time-line-item > .time-line-header,\n      .time-line-ctnr .time-line > li > .time-line-item .time {\n        font-size: 14px;\n        padding: 6px 10px; }\n      .time-line-ctnr .time-line > li > .time-line-item .time {\n        font-size: 12px;\n        color: #999;\n        float: right; }\n      .time-line-ctnr .time-line > li > .time-line-item .time-line-header {\n        margin: 0;\n        color: #555;\n        border-bottom: 1px solid #f4f4f4;\n        line-height: 1.1; }\n    .time-line-ctnr .time-line > li > .fa {\n      position: absolute;\n      border-radius: 50%;\n      width: 10px;\n      height: 10px;\n      color: #666;\n      background: #ecf0f1;\n      left: 28px;\n      top: 9px;\n      border: 2px solid #3498db;\n      display: inline-block;\n      box-sizing: border-box; }\n", ""]);
 
 // exports
 

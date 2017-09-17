@@ -31,9 +31,9 @@ function Timeline({items}) {
   const activities = getFormattedData(items);
   const dates = Object.keys(activities);
   return (
-    <div className="timeline-ctnr">
+    <div className="time-line-ctnr">
       {dates.map(d =>
-        <ul className="timeline" key={d}>
+        <ul className="time-line" key={d}>
           <li key={d} className="time-label">
             <span>
               {d}
