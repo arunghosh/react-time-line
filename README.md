@@ -1,4 +1,4 @@
-# react-timeline
+# react-time-line
 
 [![Build Status](https://travis-ci.org/arunghosh/react-pin-input.svg?branch=master)](https://travis-ci.org/arunghosh/react-pin-input)
 
@@ -7,7 +7,7 @@
 
 **Installation**
 ```
-npm install react-timeline
+npm install react-time-line
 ```
 
 
