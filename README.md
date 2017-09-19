@@ -1,6 +1,6 @@
 # react-time-line
 
-[![Build Status](https://travis-ci.org/arunghosh/react-timline.svg?branch=master)](https://travis-ci.org/arunghosh/react-timline)
+[![Build Status](https://travis-ci.org/arunghosh/react-timline.svg?branch=master)](https://travis-ci.org/arunghosh/react-time-line)
 
 A react component to display event in a vertical timeline format. This is based on the timeline found in [AdminLte](https://github.com/almasaeed2010/AdminLTE).
 
