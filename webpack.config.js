@@ -14,8 +14,11 @@ if (process.env.NODE_ENV === 'dev') {
   };
 }
 
+const mode = process.env.NODE_ENV === 'dev' ? 'development' : 'production'
+
 module.exports = {
   entry,
+  mode,
   output: Object.assign(output, {
     filename: 'bundle.js',
     library: 'react-sequence',
@@ -26,7 +29,7 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
