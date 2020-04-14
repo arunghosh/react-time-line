@@ -21,7 +21,7 @@ module.exports = {
   mode,
   output: Object.assign(output, {
     filename: 'bundle.js',
-    library: 'react-sequence',
+    library: 'react-time-line',
     libraryTarget: 'umd', // universal module definition
   }),
   devtool: 'source-map',
