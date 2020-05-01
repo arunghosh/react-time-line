@@ -6,13 +6,13 @@ A react component to display event in a vertical timeline format. This is based 
 
 ![alt tag](https://github.com/arunghosh/react-time-line/raw/master/docs/timeline.png)
 
-**Installation**
+## Installation
 ```
 npm install react-time-line
 ```
 
 
-**Usage**
+## Usage
 
 ```javascript
 const events = [
@@ -24,17 +24,19 @@ const events = [
   {ts: "2017-09-16T12:20:46.587Z", text: 'Clicked Checkout'},
 ];
 
-<Timeline items={events} />
+// default format is "hh:mm"
+<Timeline items={events} format="hh:mm a" />
 ```
-The events should be ordered in a way you need.
+The events should be ordered in a way you need. 
 
+**For time formatting options [check momentjs format docs](https://momentjs.com/docs/#/displaying/format/).**
 
-**Style**
+## Style
 
 Currently there is no proper way to set the style. As a hack you can override the default style. Check for the default style in `src/style.scss`.
 
 
-### For developers
+## For developers
 
 To make new build
 ```
